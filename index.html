@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>YouTube</title>
 </head>
 
@@ -12,123 +14,399 @@
     <header>
 
         <div id="header-1">
-            <div>YouTube Logo</div>
-            <i>S</i>
+            <i class="material-symbols-outlined">menu</i>
+            <div>
+                <img src="resources/logo.svg" alt="">
+            </div>
         </div>
 
         <div id="header-2">
-            <input type="text" placeholder="Search" id="search-bar">
-            <button id="search-button">s</button>
-            <button id="voice-search">m</button>
+            <div id="search-container">
+                <input type="text" placeholder="Search" id="search-bar">
+                <button id="search-button" class="material-symbols-outlined">search</button>
+            </div>
+            <button id="voice-search" class="material-symbols-outlined">mic</button>
         </div>
         
         <div id="header-3">
-            <button id="create">c</button>
-            <button id="bell">b</button>
-            <button id="profile">p</button>
+            <div id="create-butt">
+                <button id="create-btn">
+                    <i id="create" class="material-symbols-outlined">add</i>
+                    <span id="create-span">Create</span>
+                </button>
+            </div>
+            <button id="bell" class="material-symbols-outlined">notifications</button>
+            <button id="profile" class="material-symbols-outlined">account_circle</button>
         </div>
     
     </header>
 
     <main>
 
-        <section id="sidebar">
+        <aside id="sidebar">
 
-            <section id="side-main">
+            <section id="side-main" class="side-sec">
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">home</i>
                     <p class="butt-text">Home</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">S</i>
+                    <i class="material-symbols-outlined">S</i>
                     <p class="butt-text">Shorts</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">subscriptions</i>
                     <p class="butt-text">Subscriptions</p>
                 </button>
             </section>
 
-            <section id="side-you">
-                <a href="" class="side-title">You</a>
+            <section id="side-you" class="side-sec">
+                <a href="" class="side-title">You ></a>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">history</i>
                     <p class="butt-text">History</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">S</i>
+                    <i class="material-symbols-outlined">playlist_play</i>
                     <p class="butt-text">Playlists</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">schedule</i>
                     <p class="butt-text">Watch later</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">thumb_up</i>
                     <p class="butt-text">Liked videos</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">S</i>
+                    <i class="material-symbols-outlined">smart_display</i>
                     <p class="butt-text">Your videos</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">download_2</i>
                     <p class="butt-text">Downloads</p>
                 </button>
             </section>
 
-            <section id="side-explore">
+            <section id="side-explore" class="side-sec">
                 <a href="" class="side-title">Explore</a>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">music_note</i>
                     <p class="butt-text">Music</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">S</i>
+                    <i class="material-symbols-outlined">S</i>
                     <p class="butt-text">Gaming</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">news</i>
                     <p class="butt-text">News</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">keyboard_arrow_down</i>
                     <p class="butt-text">Show more</p>
                 </button>
             </section>
 
-            <section id="side-more">
+            <section id="side-more" class="side-sec">
                 <a href="" class="side-title">More from YouTube</a>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">H</i>
                     <p class="butt-text">YouTube Premium</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">S</i>
+                    <i class="material-symbols-outlined">S</i>
                     <p class="butt-text">YouTube Studio</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">H</i>
                     <p class="butt-text">YouTube Music</p>
                 </button>
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">H</i>
                     <p class="butt-text">YouTube Kids</p>
                 </button>
             </section>
 
-            <section id="side-settings">
+            <section id="side-settings" class="side-sec">
                 <button class="side-butt">
-                    <i class="butt-icon">H</i>
+                    <i class="material-symbols-outlined">settings</i>
                     <p class="butt-text">Settings</p>
                 </button>
             </section>
 
+        </aside>
+
+        <section id="main-screen">
+
+            <section id="tags">
+
+                <button id="all-tag" class="tag-butt">All</button>
+                <button class="tag-butt">Gaming</button>
+                <button class="tag-butt">iOS</button>
+                <button class="tag-butt">Music</button>
+                <button class="tag-butt">Inventions</button>
+                <button class="tag-butt">Smartphones</button>
+                <button class="tag-butt">Computer Hardware</button>
+                <button class="tag-butt">Live</button>
+                <button class="tag-butt">Tarawih</button>
+                <button class="tag-butt">Microsoft Windows</button>
+                <button class="tag-butt">Gaming computers</button>
+                <button class="tag-butt">Supercar</button>
+                <button class="tag-butt">AI</button>
+                <button class="tag-butt">White noise</button>
+                <button class="tag-butt">Superhero movies</button>
+                <button class="tag-butt">Free music</button>
+
+            </section>
+
+            <section id="videos-container-1">
+
+                <div class="videoCard">
+
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/agukefNfunc/hq720.jpg" alt="">
+                    </div>
+
+                    <div class="video-details">
+
+                        <div class="channel-pic">
+                            <i class="material-symbols-outlined">account_circle</i>
+                        </div>
+
+                        <div class="video-info">
+                            <h4 class="vid-title">Solving Racism (meme)</h4>
+                            <p class="channel-name">Mantey</p>
+                            <p class="views-time">9M views • 3 years ago</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+
+                    </div>
+
+                </div>
+
+                <div class="videoCard">
+
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/agukefNfunc/hq720.jpg" alt="">
+                    </div>
+
+                    <div class="video-details">
+
+                        <div class="channel-pic">
+                            <i class="material-symbols-outlined">account_circle</i>
+                        </div>
+
+                        <div class="video-info">
+                            <h4 class="vid-title">Solving Racism (meme)</h4>
+                            <p class="channel-name">Mantey</p>
+                            <p class="views-time">9M views • 3 years ago</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+
+                    </div>
+
+                </div>
+
+                <div class="videoCard">
+
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/agukefNfunc/hq720.jpg" alt="">
+                    </div>
+
+                    <div class="video-details">
+
+                        <div class="channel-pic">
+                            <i class="material-symbols-outlined">account_circle</i>
+                        </div>
+
+                        <div class="video-info">
+                            <h4 class="vid-title">Solving Racism (meme)</h4>
+                            <p class="channel-name">Mantey</p>
+                            <p class="views-time">9M views • 3 years ago</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div id="shorts">
+                    <i>i</i>
+                    <h3>Shorts</h3>
+            </div>
+            
+            <section id="shorts-container">
+
+                <div class="shortCard">
+
+                    <div class="shortThumbnail">
+                        <img src="https://i.ytimg.com/vi/708iJQS1p94/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBl60Ot2YtUppbGVGxrwEDn59XkAA&usqp=CCk" alt="">
+                    </div>
+
+                    <div class="short-info">
+                        <div class="short-text">
+                            <h4 class="short-vid-title">Title Short</h4>
+                            <p class="views-time">2.1M views</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+                    </div>
+
+                </div>
+
+                <div class="shortCard">
+
+                    <div class="shortThumbnail">
+                        <img src="https://i.ytimg.com/vi/708iJQS1p94/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBl60Ot2YtUppbGVGxrwEDn59XkAA&usqp=CCk" alt="">
+                    </div>
+
+                    <div class="short-info">
+                        <div class="short-text">
+                            <h4 class="short-vid-title">Title Short</h4>
+                            <p class="views-time">2.1M views</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+                    </div>
+
+                </div>
+
+                <div class="shortCard">
+
+                    <div class="shortThumbnail">
+                        <img src="https://i.ytimg.com/vi/708iJQS1p94/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBl60Ot2YtUppbGVGxrwEDn59XkAA&usqp=CCk" alt="">
+                    </div>
+
+                    <div class="short-info">
+                        <div class="short-text">
+                            <h4 class="short-vid-title">Title Short</h4>
+                            <p class="views-time">2.1M views</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+                    </div>
+
+                </div>
+
+                <div class="shortCard">
+
+                    <div class="shortThumbnail">
+                        <img src="https://i.ytimg.com/vi/708iJQS1p94/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBl60Ot2YtUppbGVGxrwEDn59XkAA&usqp=CCk" alt="">
+                    </div>
+
+                    <div class="short-info">
+                        <div class="short-text">
+                            <h4 class="short-vid-title">Title Short</h4>
+                            <p class="views-time">2.1M views</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+                    </div>
+
+                </div>
+
+                <div class="shortCard">
+
+                    <div class="shortThumbnail">
+                        <img src="https://i.ytimg.com/vi/708iJQS1p94/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBl60Ot2YtUppbGVGxrwEDn59XkAA&usqp=CCk" alt="">
+                    </div>
+
+                    <div class="short-info">
+                        <div class="short-text">
+                            <h4 class="short-vid-title">Title Short</h4>
+                            <p class="views-time">2.1M views</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="videos-container-2">
+
+                <div class="videoCard">
+
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/agukefNfunc/hq720.jpg" alt="">
+                    </div>
+
+                    <div class="video-details">
+
+                        <div class="channel-pic">
+                            <i class="material-symbols-outlined">account_circle</i>
+                        </div>
+
+                        <div class="video-info">
+                            <h4 class="vid-title">Solving Racism (meme)</h4>
+                            <p class="channel-name">Mantey</p>
+                            <p class="views-time">9M views • 3 years ago</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+
+                    </div>
+
+                </div>
+
+                <div class="videoCard">
+
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/agukefNfunc/hq720.jpg" alt="">
+                    </div>
+
+                    <div class="video-details">
+
+                        <div class="channel-pic">
+                            <i class="material-symbols-outlined">account_circle</i>
+                        </div>
+
+                        <div class="video-info">
+                            <h4 class="vid-title">Solving Racism (meme)</h4>
+                            <p class="channel-name">Mantey</p>
+                            <p class="views-time">9M views • 3 years ago</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+
+                    </div>
+
+                </div>
+
+                <div class="videoCard">
+
+                    <div class="thumbnail">
+                        <img src="https://i.ytimg.com/vi/agukefNfunc/hq720.jpg" alt="">
+                    </div>
+
+                    <div class="video-details">
+
+                        <div class="channel-pic">
+                            <i class="material-symbols-outlined">account_circle</i>
+                        </div>
+
+                        <div class="video-info">
+                            <h4 class="vid-title">Solving Racism (meme)</h4>
+                            <p class="channel-name">Mantey</p>
+                            <p class="views-time">9M views • 3 years ago</p>
+                        </div>
+
+                        <span class="material-symbols-outlined more">more_vert</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
         </section>
-
-        <section id="tags"></section>
-
-        <section id="main-screen"></section>
 
     </main>
     
