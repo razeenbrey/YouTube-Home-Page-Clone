@@ -363,6 +363,13 @@ body.sidebar-collapsed .butt-text {
     padding: 24px 0;
 }
 
+#shorts {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+
 .shortCard {
     width: 260px;
     flex-shrink: 0;
