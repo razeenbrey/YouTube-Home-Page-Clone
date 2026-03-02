@@ -14,7 +14,9 @@
     <header>
 
         <div id="header-1">
-            <i class="material-symbols-outlined">menu</i>
+            <button id="menu-toggle" class="material-symbols-outlined">
+                menu
+            </button>
             <div>
                 <img src="resources/logo.svg" alt="">
             </div>
@@ -29,6 +31,10 @@
         </div>
         
         <div id="header-3">
+            <button id="theme-toggle">
+                <span id="theme-icon">🌙</span>
+                <span id="theme-label">Dark Mode</span>
+            </button>
             <div id="create-butt">
                 <button id="create-btn">
                     <i id="create" class="material-symbols-outlined">add</i>
@@ -413,6 +419,49 @@
 
     </main>
     
+    <script>
+        (function () {
+            const body = document.body;
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const themeLabel = document.getElementById('theme-label');
+            const menuToggle = document.getElementById('menu-toggle');
+
+            const applyTheme = (isDark) => {
+                if (isDark) {
+                    body.classList.add('dark-mode');
+                    themeIcon.textContent = '☀️';
+                    themeLabel.textContent = 'Light Mode';
+                } else {
+                    body.classList.remove('dark-mode');
+                    themeIcon.textContent = '🌙';
+                    themeLabel.textContent = 'Dark Mode';
+                }
+            };
+
+            // Theme init
+            if (themeToggle && themeIcon && themeLabel) {
+                const stored = localStorage.getItem('yt-clone-theme');
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const isDark = stored === 'dark' || (stored === null && prefersDark);
+                applyTheme(isDark);
+
+                themeToggle.addEventListener('click', () => {
+                    const nowDark = !body.classList.contains('dark-mode');
+                    applyTheme(nowDark);
+                    localStorage.setItem('yt-clone-theme', nowDark ? 'dark' : 'light');
+                });
+            }
+
+            // Sidebar collapse
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    body.classList.toggle('sidebar-collapsed');
+                });
+            }
+        })();
+    </script>
+
 </body>
 
 </html>
